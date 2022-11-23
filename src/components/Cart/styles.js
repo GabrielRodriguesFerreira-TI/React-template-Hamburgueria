@@ -20,6 +20,20 @@ export const CartContent = styled.div`
     flex-direction: column;
     background: #F5F5F5;
     border-radius: 0px 0px 5px 5px;
+    transition: 0.3s ease-in-out;
+    animation: BounceIn 2s ease 0s 1 normal forwards;
+
+    @keyframes BounceIn {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 `
 
 export const HeaderCart = styled.div`

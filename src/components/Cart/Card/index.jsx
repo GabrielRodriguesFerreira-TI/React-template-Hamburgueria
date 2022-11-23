@@ -16,7 +16,7 @@ export const Card = ({ productsList, removeCard, fade }) => {
                                 <DivDescription>
                                     <div elipse={element.name.length}>
                                         {element.name.length > 10 ? (
-                                            <h2>{element.name.substring(0, 10)}...</h2>
+                                            <h2>{element.name.substring(0, 9)}...</h2>
                                         ) : (
                                             <h2>{element.name}</h2>
                                         )}
@@ -35,7 +35,7 @@ export const Card = ({ productsList, removeCard, fade }) => {
                                 <DivDescription>
                                     <div elipse={element.name.length}>
                                         {element.name.length > 10 ? (
-                                            <h2>{element.name.substring(0, 10)}...</h2>
+                                            <h2>{element.name.substring(0, 6)}...</h2>
                                         ) : (
                                             <h2>{element.name}</h2>
                                         )}

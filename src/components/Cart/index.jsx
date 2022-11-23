@@ -28,7 +28,6 @@ export const Cart = ({ productsList, totalValue, removeCard, removeAllCard, filt
                         <TotalCart filteredProducts={filteredProducts} removeAllCards={removeAllCard} value={totalValue}></TotalCart>
                     </>
                 )}
-
             </CartContent>
         </MainDiv>
     )

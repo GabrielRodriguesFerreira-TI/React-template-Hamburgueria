@@ -43,7 +43,7 @@ export const LiListFadeOut = styled.li`
 
 	100% {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(100px);
 	}
 }
 `
