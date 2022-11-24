@@ -65,9 +65,15 @@ export const LogoHeader = styled.div`
 
 export const Container = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
+
+    @media (min-width: 1100px) {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 `
