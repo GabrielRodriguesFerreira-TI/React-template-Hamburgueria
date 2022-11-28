@@ -8,7 +8,7 @@ export const Container = styled.div`
     max-width: 1300px;
     margin 0 auto;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
         display: flex;
     }
 `

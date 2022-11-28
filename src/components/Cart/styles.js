@@ -1,21 +1,22 @@
 import styled from "styled-components";
 
 export const MainDiv = styled.div`
-    padding: 10px 10px 10px 20px;
+    padding: 10px 0px 10px 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
     margin-top: 25px;
-    width: 350px;
+    width: 370px;
     height: 600px;
+    justify-content: flex-end;
     }
 `
 
 export const CartContent = styled.div`
     width: 95%;
-    max-width: 360px;
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     background: #F5F5F5;
@@ -83,8 +84,14 @@ export const EmptyCart = styled.div`
 
 
 export const UlList = styled.ul`
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
+    overflow-X: auto;
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @media (min-width: 950px) {
+        max-height: 400px;
+        overflow-X: auto;
+    }
 `

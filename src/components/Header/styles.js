@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainHeader = styled.header`
     width: 100%;
-    padding: 17px 3px 17px 3px;
+    padding: 17px 0px 17px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ export const MainHeader = styled.header`
     background-color: #f5f5f5;
     gap: 15px;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
         justify-content: space-between;
         flex-direction: row;
     }
@@ -69,10 +69,11 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 15px;
     max-width: 1300px;
     margin: 0 auto;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
         justify-content: space-between;
         flex-direction: row;
     }

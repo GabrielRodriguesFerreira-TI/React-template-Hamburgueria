@@ -60,19 +60,18 @@ function App() {
     })
 
     const verifiction = filteredProducts.some(element => element.id === id)
-    verifiction ? (
+    if(verifiction) {
       notifyError()
-    ) : (
-      setFilteredProducts([...filteredProducts, result])(
-        notifySucess()
-      )
-    )
+    } else {
+      setFilteredProducts([...filteredProducts, result])
+      notifySucess()
+    }
 
   }
 
 
   const removeCard = (card) => {
-    setFade("fadeOut")
+    setFade(card.name)
 
     setTimeout(function() {
       const result = filteredProducts.filter(element => {
@@ -92,6 +91,7 @@ function App() {
       setFade("fadeIn")
     }, 1100)
   }
+
   return (
     <MainDiv>
       <ToastContainer

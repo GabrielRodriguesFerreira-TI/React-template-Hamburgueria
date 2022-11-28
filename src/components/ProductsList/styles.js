@@ -33,7 +33,7 @@ export const DivProducts = styled.div`
         margin-right: 20px;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
         padding-top: 15px ;
         width: 950px;
         height: 760px;
@@ -52,13 +52,13 @@ export const DivProducts = styled.div`
 
 export const UlList = styled.ul`
     width: 95%;
-    height: 346px;
+    height: 358px;
     display: flex;
     overflow-y: auto;
     gap: 20px;
     transition: 0.3s ease-in-out;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
         width: 100%;
         height: 750px;
         display: flex;
@@ -79,7 +79,7 @@ export const TitleSearch = styled.h2`
         color: #828282;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 950px) {
     margin-left: 0px;
     margin-bottom: 00px;
     }
